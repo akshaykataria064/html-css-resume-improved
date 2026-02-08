@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  display: block;
+}
+
+.name {
+  background-color: #91c5d1;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #39404e;
+}
+
+h1 {
+  font-family: "Sacramento", cursive;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #39404e;
+  padding: 0;
+  margin-bottom: 0.75rem
+}
+
+span {
+  text-decoration: underline;
+}
+
+.mountains {
+  width: 100%;
+  height: 10rem;
+  display: block;
+}
+
+.img {
+  height: 10rem;
+  padding-top: 5rem;
+}
+
+.img>img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+hr {
+  border: dotted #39404e 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 50px auto;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row: 1fr 1fr;
+  margin-top: 2.5rem;
+  gap: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.flex-container div {
+  padding: 0 4rem 0 4rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #39404e;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  background-color: #91c5d1;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  gap: 25px;
+  padding-top: 1.5rem;
+}
+
+.a {
+  column-width: 1rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: #39404e;
+}
+
+a:visited {
+  color: #39404e;
+}
+
+p.copyright {
+  font-size: 0.75rem;
+  color: #39404e;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  p,
+  h3 {
+    padding: 0.75rem;
+  }
+}
